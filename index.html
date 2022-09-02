@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap,800,900"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/21c8ae605d.js" crossorigin="anonymous"></script>
+    <title>Wanderson Santos - Projeto Gama Academy</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./img/logo.png" width="180" alt="">
+        </div>
+        <ul>
+            <li>
+                <i class="fa-brands fa-github">&nbsp;<a href="https://github.com/WSantosRJ" target="_blank">GitHub</a></i>
+            </li>
+            <li>
+                <i class="fa-brands fa-at">&nbsp;<a href="mailto:wsantos.rj@outlook.com" target="_blank">E-Mail</a></i>
+            </li>
+            <li><i class="fa-brands fa-linkedin">&nbsp;<a href="https://www.linkedin.com/in/wanderson-santos-rj/" target="_blank">LinkedIn</a> </i></li>
+            <li>
+                <i class="fa-brands fa-whatsapp">&nbsp;<a href="https://wa.me/21998272799" target="_blank">WhatsApp</a></i>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+
+            <div class="name">
+                <h1>
+                    <span>W</span>
+                    <span>a</span>
+                    <span>n</span>
+                    <span>d</span>
+                    <span>e</span>
+                    <span>r</span>
+                    <span>s</span>
+                    <span>o</span>
+                    <span>n</span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <span>S</span>
+                    <span>a</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>o</span>
+                    <span>s</span>
+                </h1>
+                <h5>Analista de Sistemas/Analista de Dados</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-rotate-right"></i>
+                <!-- <i id="animation" class="fa-solid fa-caret-down"></i> -->
+            </div>
+                <div style="display: none;" id="about">
+                    <p>Analista de Suporte Técnico de TI, Graduado em Anállise e Desenvolvimento de Sistemas, Cursando
+                        Defesa Cibernética e Analista de BI/Dados, esse ultimo realizado em um BootCamp no <a
+                            href="http://www.igti.com.br">IGTI - Institudo de Gestão e Tecnologia da
+                            Informação</a>(atual <a href="http://https://www.xpeducacao.com.br/">XP Educação</a>),
+                        patrocinado pela <a href="http://www.embraer.com">Embraer</a> no programa chamado Embraer Social
+                        Tech, o que me levou a ser contratado pela mesma. Sou PcD, tenho deficiência física, mas nunca
+                        me impossibilitou de fazer absolutamente nada.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div>
+                    <img src="/img/data-anayitics.png" alt="">
+                    <p>Data analytics ou simplesmente “análise de dados” refere-se ao processo de examinar conjuntos de
+                        dados em busca de conclusões sobre as informações ali contidas, como padrões, oportunidades e
+                        mesmo brechas estratégias que podem ser exploradas pela empresa. <br>
+                        Hoje, esse é um processo bastante popular, baseado no uso de ferramentas avançadas de captura,
+                        armazenamento e processamentos de dados.<br>
+                        O data analytics é um dos processos mais importantes dentro do Business Intelligence, conjunto
+                        de processos que visa se aproveitar dos dados de uma empresa para melhorar e otimizar sua tomada
+                        de decisão e seu desempenho organizacional.</p>
+                </div>
+                <div>
+                    <img src="/img/dev.png" alt="">
+                    <p>Um DEV é uma pessoa que sabe como desenvolver software. Eles também são chamados de:
+                        Programadores, coders, engenheiros de software, UX, front, back, fullstack, embarcado, mobile e
+                        tantos outros.<br>
+                        Um DEV é alguém que estuda ou trabalha com desenvolvimento de software. E software em sua forma
+                        mais simples, pode ser descrito como uma série de instruções que alguém escreveu, parecido com
+                        uma receita de bolo.<br>
+                        Diversos DEVs possuem diplomas, certificados e graduações chiques, porém, uma quantidade enorme
+                        deles não possui, e algo comum entre esse pessoal diz respeito ao pensamento de que não sentem
+                        ser um requisito tão necessário. Muitos DEVs aprenderam por conta própria utilizando recursos
+                        gratuitos.</p>
+                </div>
+        </section>
+        <div class="form">
+            <div>
+                <p>deixe seu contato</p>
+            </div>
+            <input type="text" placeholder="Seu melhor e-mail">
+            <button>Enviar</button> <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;COPYRIGHT 2022, <a href="mailto:wsantos.rj@outlook.com?subject=Contato Site GitHub">Wanderson A. S. A. Santos</a></p>
+    </footer>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
